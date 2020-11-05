@@ -45,8 +45,9 @@ Project Organization
 
 ## Logs
 
-After reading the file 'references/technical_test_datascientist.md'
-and giving a little look at the data 'data/raw/test_data_CANDIDATE.csv'
+### Log 0.0 - before starting
+After reading the file `references/technical_test_datascientist.md`
+and giving a little look at the data `data/raw/test_data_CANDIDATE.csv`
 the following things come to my mind.  
 * I need to stablish a baseline metric (the porcentage of male/female shoud be enough).
 * There is some missing data, this should be treated.
@@ -56,6 +57,15 @@ the following things come to my mind.
     - Training will not be timing consiming.
     - There is not enough data to split the dataset in a non bias way.
 obs: (I am keeping track of the data with git because it's small. Otherwise I woud rather use DVC)
+
+### Log 0.1 - After finishing the first data analisys
+The data analissy was performed in the `/notebooks/data-analisys.ipunb` were I explaned each feature
+and clean the data for modeling.
+I also had some ingsights that I explained in the notebook.  
+If this was a regular project I would done the feature engineerig part in a python script located in `src/features/build_features.py`
+This would make easyer of reuses that code to engeneer more data.
+
+
 
 --------
 
