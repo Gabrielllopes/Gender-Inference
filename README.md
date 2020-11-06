@@ -7,11 +7,17 @@ After the Project Organization section there is a 'Logs' section where I describ
 
 Usage:
 
+To install the requirimentes use the follow command in a new enviroment:
+```bash
+pip install --upgrade -r requirements.txt
+```
+
 The final script to do the inference is located in the following path: `/src/models/sex_predictor.py`
 To run the script by :
 ```bash
 # full path example '/home/gabriel/Documents/sex-predictor/data/raw/test_data_CANDIDATE.csv'
 python3 src/models/sex_predictor.py --input_file '<full_path>'
+# The result will be outputed in the project directory by the name of newsample_PREDICTIONS_gabrielLopesSilva.csv
 ```
 
 Project Organization
