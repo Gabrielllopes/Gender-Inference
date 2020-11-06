@@ -10,7 +10,6 @@ Project Organization
  
     ├── README.md          <- The top-level README for developers using this project.  
     ├── data  
-    │   ├── interim        <- Intermediate data that has been transformed.  
     │   ├── processed      <- The final, canonical data sets for modeling.  
     │   └── raw            <- The original, immutable data dump.  
     |  
@@ -22,8 +21,6 @@ Project Organization
     │  
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.  
     │  
-    ├── reports            <- Generated analysis.  
-    │   └── figures        <- Generated graphics and figures to be used in reporting  
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`  
@@ -32,16 +29,10 @@ Project Organization
     ├── src                <- Source code for use in this project.  
     │   │  
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling  
-    │   │   └── build_features.py  
+    │   ├── features       <- Scripts to turn raw data into features for modeling or prediction
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
 
 ## Logs
 
@@ -59,11 +50,16 @@ the following things come to my mind.
 obs: (I am keeping track of the data with git because it's small. Otherwise I woud rather use DVC)
 
 ### Log 0.1 - After finishing the first data analisys
-The data analissy was performed in the `/notebooks/data-analisys.ipunb` were I explaned each feature
+The data analissy was performed in the `/notebooks/data-analisys.ipynb` were I explaned each feature
 and clean the data for modeling.
-I also had some ingsights that I explained in the notebook.  
+I also had some insights that I explained in the notebook.  
 If this was a regular project I would done the feature engineerig part in a python script located in `src/features/build_features.py`
 This would make easyer of reuses that code to engeneer more data.
+
+### Log 0.2 - Modeling
+The modeling part was performed in the `/src/models/find-models.ipynp` 
+The best model was saved in `/models/model.pickle.dat`
+The explanation why I choose xgbost and the other techiniques was explained in the nootebook
 
 
 
