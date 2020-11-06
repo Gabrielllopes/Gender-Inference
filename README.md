@@ -5,6 +5,15 @@ This projects follows the cookiecutter data science project template.
 
 After the Project Organization section there is a 'Logs' section where I describe my decisions towards this project.
 
+Usage:
+
+The final script to do the inference is located in the following path: `/src/models/sex_predictor.py`
+To run the script by :
+```bash
+# full path example '/home/gabriel/Documents/sex-predictor/data/raw/test_data_CANDIDATE.csv'
+python3 src/models/sex_predictor.py --input_file '<full_path>'
+```
+
 Project Organization
 ------------
  
@@ -61,7 +70,9 @@ The modeling part was performed in the `/src/models/find-models.ipynp`
 The best model was saved in `/models/model.pickle.dat`
 The explanation why I choose xgbost and the other techiniques was explained in the nootebook
 
-
+### Log 0.3 - Creating sex prediction
+The last part was to create the predictor script, that is located at `/src/models/sex_predictor.py`
+In this script first do a pre-processing and after that does the inference
 
 --------
 
