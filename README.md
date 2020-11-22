@@ -1,4 +1,4 @@
-Sex Predictor
+Gender Inference
 ==============================
 
 This projects follows the cookiecutter data science project template.
